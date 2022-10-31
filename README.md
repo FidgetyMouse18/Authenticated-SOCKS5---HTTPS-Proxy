@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [Getting Started](#getting_started)
+- [Use and Licensing](#use)
 
 ## About <a name = "about"></a>
 
@@ -40,3 +41,6 @@ All 3 have AES encrypted data passed to them using the security key and specifie
 For add and remove, the action is applied to the specific ip the request was made to (all in use ip's have these endpoints). 
 
 Additionally, the sent hashed password should use sha256 for hashing.
+
+## Use and Licensing <a name = "use"></a>
+This software is free to modify and use for personal and educational purposes so long as credit is given. Commercial or monetary use requires explicit permission from myself with arrangements.
