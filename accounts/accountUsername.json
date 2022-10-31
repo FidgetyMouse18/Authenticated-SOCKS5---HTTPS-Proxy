@@ -1,0 +1,4 @@
+{
+    "PassHash": "hash of the user password",
+    "IPs": ["list", "of", "valid", "IPs"]
+}

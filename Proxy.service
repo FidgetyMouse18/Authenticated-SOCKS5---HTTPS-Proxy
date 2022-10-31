@@ -1,0 +1,14 @@
+[Unit]
+Description=Authenticated SOCKS5 & HTTPS Proxy by Joshua Pinti
+Documentation=N/A
+After=network.target
+
+[Service]
+Environment=PORT=54731
+Type=simple
+User=root
+ExecStart=/home/ubuntu/GoProxy/proxy
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
