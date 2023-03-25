@@ -193,11 +193,11 @@ func createServer(ip string, port string) {
 									log.Println(split[0] + " - " + host + " - " + strings.Split(client.LocalAddr().String(), ":")[0] + " - " + "HTTPS")
 									handleHTTPSConnection(client, host, byteData)
 								} else {
-									er407 := "HTTP/1.1 407 Proxy Authentication Required\r\nDate: " + time.Now().UTC().String() + "\r\nProxy-Authenticate: Basic realm=\"Requiem Technologies\"\r\n\r\n"
+									er407 := "HTTP/1.1 407 Proxy Authentication Required\r\nDate: " + time.Now().UTC().String() + "\r\nProxy-Authenticate: Basic realm=\"Proxy by Joshua Pinti\"\r\n\r\n"
 									go client.Write([]byte(er407))
 								}
 							}else {
-								er407 := "HTTP/1.1 407 Proxy Authentication Required\r\nDate: " + time.Now().UTC().String() + "\r\nProxy-Authenticate: Basic realm=\"Requiem Technologies\"\r\n\r\n"
+								er407 := "HTTP/1.1 407 Proxy Authentication Required\r\nDate: " + time.Now().UTC().String() + "\r\nProxy-Authenticate: Basic realm=\"Proxy by Joshua Pinti\"\r\n\r\n"
 								client.Write([]byte(er407))
 							}
 						}
@@ -327,11 +327,11 @@ func createServer(ip string, port string) {
 										log.Println(split[0] + " - " + host + " - " + strings.Split(client.LocalAddr().String(), ":")[0] + " - " + "HTTP")
 										handleHTTPConnection(client, host, byteData)
 									}else {
-										er407 := "HTTP/1.1 407 Proxy Authentication Required\r\nDate: " + time.Now().UTC().String() + "\r\nProxy-Authenticate: Basic realm=\"Requiem Technologies\"\r\n\r\n"
+										er407 := "HTTP/1.1 407 Proxy Authentication Required\r\nDate: " + time.Now().UTC().String() + "\r\nProxy-Authenticate: Basic realm=\"Proxy by Joshua Pinti\"\r\n\r\n"
 										client.Write([]byte(er407))
 									}
 								}else {
-									er407 := "HTTP/1.1 407 Proxy Authentication Required\r\nDate: " + time.Now().UTC().String() + "\r\nProxy-Authenticate: Basic realm=\"Requiem Technologies\"\r\n\r\n"
+									er407 := "HTTP/1.1 407 Proxy Authentication Required\r\nDate: " + time.Now().UTC().String() + "\r\nProxy-Authenticate: Basic realm=\"Proxy by Joshua Pinti\"\r\n\r\n"
 									client.Write([]byte(er407))
 								}
 							}
